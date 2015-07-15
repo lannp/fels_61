@@ -1,11 +1,12 @@
 en:
+  valid: "Invalid email/password combination"
   static_pages:
     hello: "Hello world"
     footer: "The E-learning system by Nguyen Phuong Lan and Nguyen Hoang Hao"    
     sign_in: "Sign in now!"
     welcome: "Welcome to the E-Learning System"
     title: "E-Learning System"
-  head:
+  header:
     home: "Home"
     word_list: "Word List"
     category: "Category"
@@ -13,3 +14,10 @@ en:
     result: "Result"
     member: "Member"
     log_in: "Log in"
+    profile: "Profile"
+    settings: "Settings"
+    log_out: "Log out"
+    account: "Account"
+  login:
+    remember: "Remember me on this computer"
+    new_user: "New user?"
