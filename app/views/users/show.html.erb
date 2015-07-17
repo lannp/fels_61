@@ -1,0 +1,14 @@
+<% provide :title, @user.name %>
+<div class="row">
+  <aside class="col-md-3">
+    <table cellspacing="30">
+      <td>
+        <%= image_tag @user.avatar.url, size: Settings.avatar.image_size_edit %>
+      </td>
+      <td><h3>
+        <%= @user.name %>
+        <%= @user.email %>
+      </h3></td>
+    </table>
+  </aside>
+</div>

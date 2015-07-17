@@ -1,0 +1,29 @@
+<% provide:title, t("edit_user.edit") %>
+<h1><%= t "edit_user.update" %></h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user) do |f| %>
+      <%= render "shared/error_messages", object: f.object %>
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control" %>
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "form-control" %>
+      <%= f.label :password %>
+      <%= f.password_field :password, class: "form-control" %>
+      <%= f.label :password_confirmation, t("edit_user.confir") %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+        <div class="row">
+          <div class="col-md-5">
+            <%= image_tag @user.avatar.url, size: Settings.avatar.image_size_edit %>
+          </div>
+          <div class="col-md-7">
+            <span class="avatar">
+              <%= f.file_field :avatar, accept: Settings.image_type_accept,
+                onchange: "PreviewImage('user_image');" %>
+            </span>
+          </div>
+        </div>
+      <%= f.submit t "edit_user.save", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

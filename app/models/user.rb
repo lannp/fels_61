@@ -1,7 +1,10 @@
 class User < ActiveRecord::Base
   attr_accessor :remember_token
   before_save {self.email = email.downcase}
-  validates :name,  presence: true, length: {maximum: Settings.maximum_name_length}
+  mount_uploader :avatar, AvatarUploader
+  validate :avatar_size
+
+  validates :name, presence: true, length: {maximum: Settings.maximum_name_length}
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, length: {maximum: Settings.maximum_email_length},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
@@ -32,6 +35,10 @@ class User < ActiveRecord::Base
   def forget
     update_attributes! remember_digest: nil
   end
+
+  private
+  def avatar_size
+    errors.add :avatar, t("edit_user.p_warning") if 
+      avatar.size > Settings.avatar.image_storage.megabytes
+  end
 end
-
-

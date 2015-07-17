@@ -2,5 +2,15 @@ remember: 1
 maximum_name_length: 50
 maximum_email_length: 50
 minimum_pass_length: 6
-
-
+avatar: 
+  image_type_accept: image/jpeg,image/gif,image/png
+  image_size_edit: "50x50"
+  image_size: "50x50"
+  image_storage: 5
+  list_user_avatar_size: 50
+  store_dir: "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+  extension_white_list:
+    - jpg
+    - jpeg
+    - gif
+    - png

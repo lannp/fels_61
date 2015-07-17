@@ -1,0 +1,5 @@
+<li>
+  <%= image_tag user.avatar.url,
+    size: Settings.avatar.image_size if user.avatar %>
+  <%= link_to user.name, user %>
+</li>
