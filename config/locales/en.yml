@@ -21,6 +21,14 @@ en:
   login:
     remember: "Remember me on this computer"
     new_user: "New user?"
+  admin_dashboard:
+    header: "System management"
+    users: "Users:"
+    categories: "Categories:"
+    words: "Words:"
+    lessons: "Lessons:"
+  comming_soon: "Comming soon"
+  dashboard: "dashboard"
   hello: "Hello world"
   welcome: "Welcome to the E-learning System!"
   error: "error"
