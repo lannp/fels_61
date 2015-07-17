@@ -21,3 +21,11 @@ en:
   login:
     remember: "Remember me on this computer"
     new_user: "New user?"
+  hello: "Hello world"
+  welcome: "Welcome to the E-learning System!"
+  error: "error"
+  error_message: "The form contains"
+  signup: "Signup"
+  confirm: "Confirmation"
+  create_account: "Create my account"
+  

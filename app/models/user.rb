@@ -33,3 +33,5 @@ class User < ActiveRecord::Base
     update_attributes! remember_digest: nil
   end
 end
+
+
