@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    root "dashboard#index"
+    resources :users
+    resources :categories
+    resources :words
+    resources :lessons
+  end
+
   get "users/new"
   get "sessions/new"
   root "static_pages#home"
