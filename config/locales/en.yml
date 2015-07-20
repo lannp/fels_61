@@ -43,7 +43,7 @@ en:
   admin: "set admin"
   normal: "normal"
   delete: "Delete"
-  confirm: "Are you sure?"
+  confirm_action: "Are you sure?"
   set_normal_user: "delete admin"
   set_admin_message: "Update admin role successful"
   edit_user:
@@ -55,3 +55,12 @@ en:
     edit: "Edit user"
     confir: "Confirm password"
     p_warning: "should be less than 5MB"
+  done: "Done"
+  category: "Category"
+  description: "Description:"
+  num_of_words: "Words number:"
+  create_category_success_message: "Create new category successful"
+  create_category_failed_message: "Create new category failed"
+  destroy_category_success_message: "Destroy category successful"
+  destroy_category_unsuccess_message: "Destroy category unsuccessful"
+  

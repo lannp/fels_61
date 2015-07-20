@@ -1,0 +1,7 @@
+<tr id="category-<%= category.id %>">
+  <td><%= category.name %></td>
+  <td><%= category.description %></td>
+  <td><%= link_to t("delete"), admin_category_path(category), method: :delete,
+    data: {confirm: t("confirm_action", action: t("delete"))} %>
+  </td>
+</tr>
