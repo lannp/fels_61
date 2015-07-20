@@ -6,6 +6,7 @@ avatar:
   image_type_accept: image/jpeg,image/gif,image/png
   image_size_edit: "50x50"
   image_size: "50x50"
+  image_resize: 400
   image_storage: 5
   list_user_avatar_size: 50
   store_dir: "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"

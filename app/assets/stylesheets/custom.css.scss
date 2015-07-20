@@ -146,7 +146,18 @@ input {
 .admin_interface_style{
   font-size: 25px;
 }
-
 .small-button{
   width: 150px;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }
