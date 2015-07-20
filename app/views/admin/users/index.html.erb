@@ -1,0 +1,25 @@
+<table class="table table-striped">
+  <tr>
+    <th><%= t "email" %></th>
+    <th><%= t "name" %></th>
+    <th><%= t "change_admin_role" %></th>
+    <th><%= t "delete" %></th>
+  </tr>
+  <% @users.each do |user| %>
+    <td><b><%= link_to user.email, user_path(user) %></b></td>
+    <td><b><%= user.name %></b></td>
+    <td>
+      <%= form_for [:admin, user] do |f| %>
+        <%= f.hidden_field :admin, value: !user.admin %>
+        <%= f.submit user.admin? ? t("set_normal_user") : t("admin"), 
+          class: "btn btn-primary small-button" %>
+      <% end %>
+    </td>
+    <td>
+      <%= link_to "" , admin_user_path(user), method: :delete,
+        data: {confirm: t("confirm", action: t("delete"))},
+        class: "glyphicon glyphicon-remove" %>
+    </td>
+  <% end %>
+</table>
+<%= will_paginate %>
