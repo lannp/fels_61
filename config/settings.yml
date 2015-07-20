@@ -14,3 +14,5 @@ avatar:
     - jpeg
     - gif
     - png
+paginate_per_page: 5
+
