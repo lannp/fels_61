@@ -68,4 +68,6 @@ en:
   create_category_failed_message: "Create new category failed"
   destroy_category_success_message: "Destroy category successful"
   destroy_category_unsuccess_message: "Destroy category unsuccessful"
-
+  categories:
+    all_categories: "All Categories"
+    start: "Start"
