@@ -16,4 +16,4 @@ avatar:
     - gif
     - png
 paginate_per_page: 5
-
+maximum_category_name_length: 100

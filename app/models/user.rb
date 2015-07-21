@@ -1,9 +1,8 @@
 class User < ActiveRecord::Base
   attr_accessor :remember_token
   before_save {self.email = email.downcase}
-  mount_uploader :avatar, AvatarUploader
+  
   validate :avatar_size
-
   validates :name, presence: true, length: {maximum: Settings.maximum_name_length}
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, length: {maximum: Settings.maximum_email_length},
