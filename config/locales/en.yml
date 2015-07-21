@@ -46,3 +46,12 @@ en:
   confirm: "Are you sure?"
   set_normal_user: "delete admin"
   set_admin_message: "Update admin role successful"
+  edit_user:
+    profile_update: "Profile updated"
+    log_in: "Please log in."
+    save: "Save Changes"
+    all_users: "All Users"
+    update: "Update your profile"
+    edit: "Edit user"
+    confir: "Confirm password"
+    p_warning: "should be less than 5MB"

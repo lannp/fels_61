@@ -7,7 +7,7 @@
         <li><%= link_to t("header.category"), "#" %></li>
         <li><%= link_to t("header.lesson"), "#" %></li>
         <li><%= link_to t("header.result"), "#" %></li>
-        <li><%= link_to t("header.member"), "#" %></li>
+        <li><%= link_to t("header.member"), users_path %></li>
       </ul>
     </nav>
     <nav>
@@ -19,7 +19,7 @@
             </a>
             <ul class="dropdown-menu">
               <li><%= link_to t("header.profile"), current_user %></li>
-              <li><%= link_to t("header.settings"), "#" %></li>
+              <li><%= link_to t("header.settings"), edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li>
                 <%= link_to t("log_out"), logout_path, method: "delete" %>
