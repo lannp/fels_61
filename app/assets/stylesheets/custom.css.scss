@@ -117,7 +117,7 @@ checkbox {
   margin-left: 0;
 }
 
-input, textarea, select, .uneditable-input {
+textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
@@ -209,8 +209,8 @@ input {
   margin: 0;
   margin-bottom: 40px;
   li {
-  padding: 10px 0;
-  border-bottom: 1px solid $gray-lighter;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
   }
 }
 

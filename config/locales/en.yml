@@ -60,6 +60,12 @@ en:
     edit: "Edit user"
     confir: "Confirm password"
     p_warning: "should be less than 5MB"
+  word:
+    word: "Word"
+    mean: "Meaning"
+    word_list: "Word list"
+    all: "All"
+    search: "Search"
   done: "Done"
   category: "Category"
   description: "Description:"

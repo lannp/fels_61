@@ -17,3 +17,7 @@ avatar:
     - png
 paginate_per_page: 5
 maximum_category_name_length: 100
+filter:
+  Learned: learned
+  Not_learned: not_learned
+  All: get_all
