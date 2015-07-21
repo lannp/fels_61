@@ -46,6 +46,11 @@ en:
   confirm_action: "Are you sure?"
   set_normal_user: "delete admin"
   set_admin_message: "Update admin role successful"
+  user_follow:
+    follow: "Follow"
+    unfollow: "Unfollow"
+    following: "Following"
+    followers: "Followers"
   edit_user:
     profile_update: "Profile updated"
     log_in: "Please log in."
@@ -63,4 +68,4 @@ en:
   create_category_failed_message: "Create new category failed"
   destroy_category_success_message: "Destroy category successful"
   destroy_category_unsuccess_message: "Destroy category unsuccessful"
-  
+
