@@ -5,7 +5,7 @@
     class: "col-md-3 admin_interface_style" %>
   <%= link_to t("admin_dashboard.categories") + @categories_length.to_s, admin_categories_path,
     class: "col-md-3 admin_interface_style" %>
-  <%= link_to t("admin_dashboard.words") + @words_length.to_s, "#", 
+  <%= link_to t("admin_dashboard.words") + @words_length.to_s, admin_words_path, 
     class: "col-md-3 admin_interface_style" %>
   <%= link_to t("admin_dashboard.lessons") + @lessons_length.to_s, "#", 
     class: "col-md-3 admin_interface_style" %>
