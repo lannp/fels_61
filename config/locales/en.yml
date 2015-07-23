@@ -58,6 +58,13 @@ en:
   answer: "Answer"
   enter_new_word: "Enter new word"
   status: "Status"
+  lesson:
+    success: "Good luck"  
+    fail: "Can't take this lesson"
+    finished: "Finished! Check your result below."
+    from: "Learn %{number_word} words from"
+    at: "at"  
+    lessons_list: "Learned-lesson list"
   done: "Done"
   category: "Category"
   description: "Description:"

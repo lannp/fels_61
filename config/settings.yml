@@ -21,3 +21,5 @@ filter:
   Learned: learned
   Not_learned: not_learned
   All: get_all
+words_per_lesson: 10
+answer_count: 1

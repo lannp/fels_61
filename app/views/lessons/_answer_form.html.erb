@@ -1,0 +1,15 @@
+<div class="row answer-form">
+  <div class="col-md-6">
+    <h4><%= form.object.word.content %></h4>
+  </div>
+  <div class="col-md-6 answers " role="group">
+    <% form.object.word.answers.shuffle.each do |answer| %>
+      <div>
+        <label class="answer-button ">
+          <%= form.radio_button :status, answer.status %>
+          <%= answer.conttent %>
+        </label>
+      </div>
+    <% end %><br>
+  </div>
+</div>
