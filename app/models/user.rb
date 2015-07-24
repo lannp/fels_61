@@ -59,4 +59,3 @@ class User < ActiveRecord::Base
       avatar.size > Settings.avatar.image_storage.megabytes
   end
 end
- 
