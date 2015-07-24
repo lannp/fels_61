@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row" id="results">
+    <div class="col-md-8 col-md-offset-4">
+      <div class="row">
+        <div class="col-md-4">
+          <h1><%= @lesson.category.name %></h1>
+        </div><br>
+        <div class="col-md-4">
+          <h2><%= @results.correct_answers.count %>/<%= @results.count %></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<table class="results-show">
+  <% @results.each do |result| %>
+    <tr>
+      <td><%= result.word.content %></td>
+      <td><%= result.status %></td>
+    </tr>
+  <% end %>
+</table>

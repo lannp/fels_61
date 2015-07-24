@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   resources :relationships, only: [:create, :destroy]
   resources :categories, only: [:index]
   resources :words, only: [:index]
+  resources :lessons, expect: [:destroy]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

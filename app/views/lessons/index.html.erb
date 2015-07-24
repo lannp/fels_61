@@ -1,0 +1,15 @@
+<div>
+  <h1><%= t "lesson.lessons_list" %></h1>
+  <div class="row">
+    <div class="col-md-9 col-md-offset-2">
+      <hr>  
+      <h4>
+        <% @lessons.each do |lesson| %>
+          <%= t("lesson.from", number_word: lesson.results.count) %>
+          <b><%= link_to lesson.category.name, lesson_path(lesson) %></b>
+          <%= t "lesson.at" %> <%= lesson.created_at %><br>
+        <% end %>
+      </h4>
+    </div>
+  </div>
+</div>

@@ -4,6 +4,11 @@
     <span class="col-md-10">
       <div class="categoryName"><%= category.name %> </div>
     </span>
-    <span class="col-md-1"><%= link_to t("category.start"), "#", class: "btn btn-primary" %></span>
+    <span>
+      <%= form_for Lesson.new do |f| %>
+        <%= f.hidden_field :category_id, value: category.id %>
+        <%= f.submit t("categories.start"), class: "btn btn-primary small-button" %>
+      <% end %> 
+    </span>
   </div>
 </li>
