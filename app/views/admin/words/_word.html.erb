@@ -4,8 +4,12 @@
     <td><b><%= word.content %></b></td>
     <td><%= answer.content %></td>
     <td><b><%= answer.status %></b></td>
-    <td><%= link_to t("delete") , admin_word_path(word), method: :delete,
-      data: {confirm: t("confirm_action", action: t("delete"))}  %>
+    <td>
+      <%= link_to "" , admin_word_path(word), method: :delete,
+        data: {confirm: t("confirm_action", action: t("delete"))},
+        class: "glyphicon glyphicon-remove" %>
+      <%= link_to "", edit_admin_word_path(word),
+        class: "glyphicon glyphicon-edit" %>
     </td>
   </tr>
 <% end %>

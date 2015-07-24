@@ -95,3 +95,5 @@ en:
   create_word_failed_message: "Word content can't be blank"
   create_word_success_message: "Create word successful"
   destroy_word_success_message: "Destroy word successful"
+  update_sucessfull_message: "Update successful"
+  update_failed_message: "Update failed"
