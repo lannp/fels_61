@@ -1,5 +1,5 @@
 class Admin::WordsController < ApplicationController
-  before_action :init_word, only: [:destroy]
+  before_action :init_word, only: [:edit, :update, :destroy]
 
   def index
     @categories = Category.all
@@ -23,6 +23,19 @@ class Admin::WordsController < ApplicationController
     else
       flash[:now] = t "create_word_failed_message"
       redirect_to admin_words_path
+    end
+  end
+
+  def edit
+  end
+
+  def update
+    if @word.update_attributes word_params
+      flash[:sucess] = t "update_sucessfull_message"
+      redirect_to admin_words_path
+    else
+      render :edit
+      flash.now[:danger] = t "update_failed_message"
     end
   end
 
