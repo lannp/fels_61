@@ -1,6 +1,20 @@
 <br>
 <div class="row">
   <div class="col-md-8">
+    <div class="row">
+      <h3 class="text-info">
+        <%= t "import_csv_file" %>
+      </h3>
+      <%= form_tag admin_imports_path, method: :post, multipart: true do %>
+        <div class="col-md-11">
+          <%= file_field_tag :file, class: "filestyle", required: true %>
+        </div>
+        <div class="col-md-1">
+          <%= submit_tag t("submit_csv_file"), class: "btn btn-primary pull-right" %>
+        </div>
+      <% end %>
+    </div>
+    <hr>
     <table id="word_list_table" class="table table-hover table-bordered text-center">
       <tbody>
         <tr>
@@ -15,6 +29,9 @@
         <% end %>
       </tbody>  
     </table>
+    <a href="<%= admin_words_path(format: "csv") %>" class="btn btn-primary">
+      <span class="glyphicon glyphicon-download-alt"></span><%= t "download" %>
+    </a>
   </div>
   <div class="col-md-4">
     <div>
