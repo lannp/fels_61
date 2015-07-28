@@ -1,14 +1,19 @@
 <div class="container">
-  <h1><%= t "word.word_list" %></h1>
+  <h1><%= t "words.word_list" %></h1>
   <%= render "find_form" %>
   <table class="table table-hover">
     <tr class="success">
-      <th><%= t "word.word" %></th>
-      <th><%= t "word.mean" %></th>
+      <th><%= t "words.word" %></th>
+      <th><%= t "words.mean" %></th>
     </tr>
     <% @words.each do |word| %>
       <tr>
         <td><%= word.content %></td>
+        <td>
+          <% word.answers.each do |answer| %>
+            <%= answer.content if answer.status %>
+          <% end %>
+        </td>
       </tr>
     <% end %>
   </table>

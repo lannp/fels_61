@@ -11,6 +11,13 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def show
+    @activities_feed = @user.activities.recent.paginate page: params[:page]
+    if request.path != user_path(@user)
+      redirect_to @user, status: :moved_permanently
+    end
+  end
+
   def create
     @user = User.new user_params
     if @user.save

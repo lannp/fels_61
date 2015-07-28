@@ -1,0 +1,14 @@
+<li id="activity-<%= activity.id %>">
+  <% type = activity.type %>
+  <%= link_to (image_tag @user.avatar.url, size: Settings.avatar.image_size_edit), activity.user %>
+  <span class="user"><%= link_to activity.user.name, activity.user %></span>
+  <% if activity.content == Settings.learned %>
+    <%= t("activity.from", number_word: type.results.count) %>
+    <b><%= link_to type.category.name, lesson_path(type) %></b>
+  <% else %>
+    <b><%= link_to type.name, type %></b>
+  <% end %>
+  <span class="timestamp">
+    <%= t "activity.posted" %><%= time_ago_in_words(activity.created_at) %> ago.
+  </span>
+</li>

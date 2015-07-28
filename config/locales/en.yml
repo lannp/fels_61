@@ -3,9 +3,12 @@ en:
   static_pages:
     hello: "Hello world"
     footer: "The E-learning system by Nguyen Phuong Lan and Nguyen Hoang Hao"    
-    sign_in: "Sign in now!"
+    sign_up: "Sign up now!"
     welcome: "Welcome to the E-Learning System"
     title: "E-Learning System"
+    word: "Word"
+    lesson: "Lesson"
+    learned: "Learned %{number_word} words"
   header:
     home: "Home"
     word_list: "Word List"
@@ -41,7 +44,7 @@ en:
     edit: "Edit user"
     confir: "Confirm password"
     p_warning: "should be less than 5MB"
-  word:
+  words:
     word: "Word"
     mean: "Meaning"
     word_list: "Word list"
@@ -65,6 +68,9 @@ en:
     from: "Learn %{number_word} words from"
     at: "at"  
     lessons_list: "Learned-lesson list"
+  activity:
+    from: "Learn %{number_word} words from"
+    posted: "Posted"
   done: "Done"
   category: "Category"
   description: "Description:"

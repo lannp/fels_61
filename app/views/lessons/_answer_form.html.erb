@@ -5,9 +5,9 @@
   <div class="col-md-6 answers " role="group">
     <% form.object.word.answers.shuffle.each do |answer| %>
       <div>
-        <label class="answer-button ">
+        <label class="answer-button btn btn-primary">
           <%= form.radio_button :status, answer.status %>
-          <%= answer.conttent %>
+          <%= answer.content %>
         </label>
       </div>
     <% end %><br>

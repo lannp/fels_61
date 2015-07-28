@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-6 col-md-offset-2">
       <%= select_tag :category_id, options_from_collection_for_select(@categories, :id, :name, 
-        params[:category_id]), include_blank: t("word.all")%>
+        params[:category_id]), include_blank: t("words.all")%>
       <div class="tm-radio">
         <% Settings.filter.each do |key, value| %>
           <%= label_tag value, class: "radio-inline" do %>
@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="tm-submit">
-      <%= f.submit t("word.search"), class: "btn btn-primary" %>
+      <%= f.submit t("words.search"), class: "btn btn-primary" %>
     </div>
   </div>
   <hr>
