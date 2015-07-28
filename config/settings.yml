@@ -23,3 +23,8 @@ filter:
   All: get_all
 words_per_lesson: 10
 answer_count: 1
+csv_header:
+  - category_name
+  - word 
+  - answer
+  - answer_status

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :categories
     resources :words
     resources :lessons
+    resources :imports, only: :create
   end
 
   get "users/new"

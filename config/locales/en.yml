@@ -97,3 +97,7 @@ en:
   destroy_word_success_message: "Destroy word successful"
   update_sucessfull_message: "Update successful"
   update_failed_message: "Update failed"
+  download: "Download word as a csv file"
+  import_csv_file: "Import a csv word file"
+  submit_csv_file: "Submit the CSV word file"
+  import_successfull_message: "Import file successful"
