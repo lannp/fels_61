@@ -65,6 +65,9 @@ en:
     from: "Learn %{number_word} words from"
     at: "at"  
     lessons_list: "Learned-lesson list"
+  activity:
+    from: "Learn %{number_word} words from"
+    posted: "Posted"
   done: "Done"
   category: "Category"
   description: "Description:"
